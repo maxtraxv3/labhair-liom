@@ -608,3 +608,30 @@ Labhair-liom/
 - **Flet GUI**: Run `python client/gui_flet.py` for the modern Flutter-based interface. Supports all features including voice, video, screen share, noise filtering, avatars, server icons, invites, and server settings.
 - **tkinter GUI**: Run with `--gui` for the legacy interface. The tkinter GUI features a Discord-like layout with server bar, channel sidebar, chat area, and member list.
 - **Android**: Built with Buildozer + python-for-android. Camera uses Camera1 API (pyjnius cannot proxy Camera2's abstract StateCallback). Screen capture uses MediaProjection API with a foreground service (required on Android 14+). The Java `ScreenCaptureHelper` class is compiled into the APK via `android.add_src = src`.
+
+## Licenses
+
+### Third-party dependencies
+
+| Dependency | License |
+|------------|---------|
+| [cryptography](https://github.com/pyca/cryptography) | Apache-2.0 / BSD-3-Clause (dual) |
+| [numpy](https://github.com/numpy/numpy) | BSD-3-Clause |
+| [Pillow](https://github.com/python-pillow/Pillow) | MIT-CMU |
+| [mss](https://github.com/BoboTiG/python-mss) | MIT |
+| [python-socks](https://github.com/romis2012/python-socks) | Apache-2.0 |
+| [miniupnpc](https://miniupnp.tuxfamily.org/) | BSD-3-Clause |
+| [sounddevice](https://github.com/spatialaudio/python-sounddevice) | MIT |
+| [opencv-python-headless](https://github.com/opencv/opencv-python) | Apache-2.0 |
+| [aiosqlite](https://github.com/omnilib/aiosqlite) | MIT |
+| [bcrypt](https://github.com/pyca/bcrypt) | Apache-2.0 |
+| [asyncpg](https://github.com/MagicStack/asyncpg) | Apache-2.0 |
+| [flet](https://github.com/flet-dev/flet) / flet-desktop | Apache-2.0 |
+| [pyperclip](https://github.com/asweigart/pyperclip) | BSD |
+| [pyspellchecker](https://github.com/barrysteyn/pyspellchecker) | MIT |
+| [stem](https://gitlab.torproject.org/tpo/core/stem) | LGPL-3.0 |
+
+**Notes:**
+- **stem** (LGPL-3.0) is an optional dependency used only for Tor relay control. It is installed separately via `pip install stem` and loaded dynamically — it is not linked into or bundled with this project's code. Bundled Windows/Android builds do not include it.
+- The **IMA/DVI ADPCM** codec (`shared/adpcm.py`) implements a public-domain algorithm with no patents.
+- No third-party source code is vendored into this repository; all dependencies are installed from PyPI.

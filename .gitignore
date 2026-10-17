@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Build artifacts
+build/
+dist/
+.buildozer/
+bin/
+*.apk
+*.exe
+
+# Databases & local data
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Secrets & crypto material (never commit!)
+.asciline_key
+.labhairliom_key
+.labhairliom_cert.pem
+.labhairliom_key.pem
+*.pem
+*.key
+
+# Session exports / local logs
+clonedis
+pi-session-*.html
+*.log
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

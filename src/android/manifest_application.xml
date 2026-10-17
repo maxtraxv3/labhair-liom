@@ -1,0 +1,5 @@
+<!-- Inserted inside <application> by python-for-android. -->
+<service
+    android:name="org.labhairliom.MediaProjectionService"
+    android:exported="false"
+    android:foregroundServiceType="mediaProjection" />

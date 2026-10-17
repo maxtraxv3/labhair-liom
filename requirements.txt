@@ -1,0 +1,16 @@
+cryptography>=44.0.0
+numpy>=2.0.0
+Pillow>=11.0.0
+mss>=10.0.0
+python-socks[asyncio]>=3.0.0
+miniupnpc>=2.3.0
+sounddevice>=0.5.0
+opencv-python-headless>=4.10.0
+stem>=1.8.0
+aiosqlite>=0.22.0
+bcrypt>=4.2.0
+asyncpg>=0.30.0
+flet>=0.25.0,<0.26.0
+flet-desktop>=0.25.0,<0.26.0
+pyperclip>=1.8.0
+pyspellchecker>=0.8.0
